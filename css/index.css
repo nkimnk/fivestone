@@ -223,7 +223,7 @@ body { font-family: 'Noto Sans KR', sans-serif;}
     text-overflow: ellipsis; padding-right: 5px;
 }
 #main .other .notice td:last-child { text-align: center;}
-#main .other .notice td { padding: 1px 0px; border: 1px solid #000;}
+#main .other .notice td { padding: 1px 0px;}
 /* #main .other .notice td a::before { content: 'ㆍ'; padding-right: 3px; } */
 #main .other .notice td a { 
     background-image: url(../images/icon-top.png);
@@ -231,7 +231,32 @@ body { font-family: 'Noto Sans KR', sans-serif;}
     background-size: 5px auto; padding-left: 10px;
     background-position: left center;
 }
+#main .other .notice td a:hover { color:#333 }
+#main .other .notice { position:relative }
+#main .other .notice .noticemore {
+    position:absolute; top:10px; right:10px; font-size:12px; color:#999;
+}
+#main .other .notice .noticemore:hover { color:#cc1b38 }
 
+#main .other .qna .myqna { float:left; width:48%; margin-right:4%; background-color:#444c58 }
+#main .other .qna .roadmap { float:left; width:48%;  background-color:#7a838e }
+#main .other .qna a { display:block; text-align:center; color:#fff;
+    padding:26px 12px 12px; transition:all 0.3s;
+}
+#main .other .qna a:hover { background-color:#002a62 }
+#main .other .qna h3 { font-size:15px; margin:10px 0; font-weight:normal }
+#main .other .qna p { font-size:12px }
+
+#main .other .cscenter {
+    padding:20px 20px 20px; border:1px solid #ccc; 
+    text-align:center;
+}
+#main .other .cscenter h3 { font-size:16px; color:#333 }
+#main .other .cscenter a { font-size:24px; color:#cc1b38; 
+    display:block;  padding:10px 0; 
+}
+#main .other .cscenter p { font-size:12px; color:#999 }
+#main .other .cscenter p span { display:block }
 
 
 #footer {
@@ -254,3 +279,18 @@ body { font-family: 'Noto Sans KR', sans-serif;}
 #footer .sns a { padding: 0 3px;}
 
 .gotop { position: fixed; right: 30px; bottom: 20px;}
+
+#main .attachment { 
+    background-image: url(https://oktobat.github.io/coco0224/img/intro_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: center top; */
+    padding: 80px 0px;
+    color: #fff;
+    text-align: center;
+}
+#main .attachment h2 { color: #fff; font-size: 36px;}
+#main .attachment p { font-size: 15px; padding: 25px 0;}
+#main .attachment a { border: 1px solid #fff; font-size: 13px;
+    display: inline-block; padding: 6px 30px; transition: all 0.3s;}
+#main .attachment a:hover { background-color: rgba(255, 255, 255, 0.5);}
