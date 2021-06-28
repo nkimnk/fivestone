@@ -8,6 +8,18 @@
         url(../font/ComicSansMS-Bold.woff2) format(woff2),
         url(../font/ComicSansMS-Bold.eot) format(eot)
 } */
+.skipnavi a { 
+    position: absolute; top: -50px; left: 0;
+    text-indent: -9999px; font-size: 0;
+    width: 100%; text-align: center;
+    background-color: #000; color: #fff;
+    padding: 10px 0; overflow: hidden; z-index: 99999;
+}
+.skipnavi a:focus { 
+    top: 0; font-size: 16px; text-indent: 0px;
+    position: relative; display: block;
+}
+
 
 .inner { max-width:1240px; margin:0 auto }
 body { font-family: 'Noto Sans KR', sans-serif;}
